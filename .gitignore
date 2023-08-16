@@ -3,3 +3,4 @@
 bootstrap
 .env
 node_modules
+vendor
