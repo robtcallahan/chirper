@@ -4,3 +4,5 @@ bootstrap
 .env
 node_modules
 vendor
+public/build
+.DS_Store
