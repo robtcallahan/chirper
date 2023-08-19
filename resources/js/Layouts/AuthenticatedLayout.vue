@@ -1,3 +1,5 @@
+<!--<link rel="stylesheet" href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css">-->
+
 <script setup>
 import { ref } from 'vue';
 import ApplicationLogo from '@/Components/ApplicationLogo.vue';
@@ -9,6 +11,9 @@ import { Link } from '@inertiajs/vue3';
 
 const showingNavigationDropdown = ref(false);
 </script>
+
+<!--<script src="vendor/jquery/jquery-3.7.0.min.js"></script>-->
+<!--<script src="vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>-->
 
 <template>
     <div>
@@ -34,6 +39,9 @@ const showingNavigationDropdown = ref(false);
                                 </NavLink>
                                 <NavLink :href="route('chirps.index')" :active="route().current('chirps.index')">
                                     Chirps
+                                </NavLink>
+                                <NavLink :href="route('columns.index')" :active="route().current('columns.index')">
+                                    Columns
                                 </NavLink>
                             </div>
                         </div>
@@ -120,6 +128,9 @@ const showingNavigationDropdown = ref(false);
                         </ResponsiveNavLink>
                         <ResponsiveNavLink :href="route('chirps.index')" :active="route().current('chirps.index')">
                             Chirps
+                        </ResponsiveNavLink>
+                        <ResponsiveNavLink :href="route('columns.index')" :active="route().current('columns.index')">
+                            Columns
                         </ResponsiveNavLink>
                     </div>
 
